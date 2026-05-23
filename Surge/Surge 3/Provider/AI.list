@@ -1,0 +1,72 @@
+# > ChatGPT 补充
+
+# 身份验证相关
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,identrust.com
+
+# OpenAI IP规则
+IP-ASN,14061
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
+
+# API相关
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-SUFFIX,api.openaiapi.com
+DOMAIN-SUFFIX,api-platform.openai.com
+
+# 支付与账户安全
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,invoice.stripe.com
+DOMAIN-SUFFIX,checkout.stripe.com
+
+# > 安全性补充
+
+# 防止位置追踪相关
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,amplitude.com
+
+# 监控与分析服务
+DOMAIN-SUFFIX,usage.readdle.com
+DOMAIN-SUFFIX,fabric.io
+
+# Firebase相关(部分AI服务依赖)
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,firebase.com
+DOMAIN-SUFFIX,firebaseapp.com
+
+# > Claude 补充
+DOMAIN-SUFFIX,claudeusercontent.com
+
+# > Copilot 补充
+DOMAIN-SUFFIX,m365copilot.com  # 新增的Copilot域名
+DOMAIN-SUFFIX,cloud.microsoft.com  # Microsoft新的基础架构域名
+DOMAIN-SUFFIX,bing.com/copilot  # Copilot搜索路径
+DOMAIN-SUFFIX,aischool.microsoft.com  # AI教育相关
+
+# > Gemini 补充
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com  # 保留旧的Bard域名
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN,ai.google.dev
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,waa-pa.clients6.google.com
+DOMAIN-SUFFIX,oaistatic.com  # 用于Sora和其他媒体内容
+DOMAIN-SUFFIX,one.google.com  # Google One AI Premium
+DOMAIN,gemini.googleapis.com  # API访问
+
+
+# > Meta AI 补充
+DOMAIN-SUFFIX,facebook.ai  # Meta AI相关域名
+DOMAIN-SUFFIX,meta-llama.ai  # Meta的开源模型
+DOMAIN-SUFFIX,llama.meta.com  # Llama模型访问
+
+# > Perplexity AI 补充
+DOMAIN-SUFFIX,perplexity-ai.com  # 可能用于备用域名
+DOMAIN-SUFFIX,pplx.ai  # API和缩短链接
+DOMAIN-SUFFIX,perplexity.pages.dev  # 可能用于内容分发
