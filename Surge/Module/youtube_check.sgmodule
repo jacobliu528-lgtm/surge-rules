@@ -6,4 +6,4 @@
 youtube_check = script-name=youtube_check, update-interval=1
 
 [Script]
-youtube_check = type=generic, script-path=https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%204/Script/youtube_check.js, argument=title=YouTube Premium
+youtube_check = type=generic, script-path=https://raw.githubusercontent.com/jacobliu528-lgtm/network-configs/main/Surge/Script/youtube_check.js, argument=title=YouTube Premium
