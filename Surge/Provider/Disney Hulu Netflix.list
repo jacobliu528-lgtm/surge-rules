@@ -217,3 +217,9 @@ IP-CIDR,54.67.0.0/16,no-resolve
 IP-CIDR,54.71.0.0/16,no-resolve
 IP-CIDR,52.8.0.0/16,no-resolve
 IP-CIDR,34.209.0.0/16,no-resolve
+
+# > PayPal
+USER-AGENT,PayPal*
+DOMAIN-KEYWORD,paypal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
