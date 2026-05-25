@@ -619,3 +619,23 @@ DOMAIN-SUFFIX,mwf-service.akamaized.net
 DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
 DOMAIN-SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net
+
+# > Apple CDN
+PROCESS-NAME,storedownloadd
+USER-AGENT,com.apple.appstored*
+DOMAIN,aod.itunes.apple.com
+DOMAIN,api.smoot.apple.cn
+DOMAIN,appldnld.apple.com
+DOMAIN,apptrailers.itunes.apple.com
+DOMAIN,gs-loc-cn.apple.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,music.apple.com
+DOMAIN,mvod.itunes.apple.com
+DOMAIN,osxapps.itunes.apple.com
+DOMAIN,supportdownload.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN-SUFFIX,ls.apple.com
+
+# > Microsoft Special
+USER-AGENT,Microsoft%20Remote%20Desktop*

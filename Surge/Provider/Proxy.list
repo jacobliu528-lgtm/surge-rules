@@ -1704,3 +1704,7 @@ DOMAIN-SUFFIX,showbox.dropbox.com
 DOMAIN-SUFFIX,photos.dropbox.com
 DOMAIN-SUFFIX,bolt.dropbox.com
 DOMAIN-SUFFIX,api-content-photos.dropbox.com
+
+# > Google Special
+DOMAIN,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,dl.google.com
