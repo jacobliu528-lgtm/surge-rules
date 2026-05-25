@@ -45,7 +45,6 @@ DOMAIN-SUFFIX,adblockplus.org
 DOMAIN-SUFFIX,adobe.com
 DOMAIN-SUFFIX,adobedtm.com
 DOMAIN-SUFFIX,aerisapi.com
-DOMAIN-SUFFIX,akamaihd.net
 DOMAIN-SUFFIX,airtable.com
 DOMAIN-SUFFIX,alfredapp.com
 DOMAIN-SUFFIX,allconnected.co
@@ -134,7 +133,6 @@ DOMAIN-SUFFIX,cl.ly
 DOMAIN-SUFFIX,clien.net
 DOMAIN-SUFFIX,cloud.cupronickel.goog
 DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cloudgarage.jp
 DOMAIN-SUFFIX,cloudmagic.com
 DOMAIN-SUFFIX,cmail19.com
@@ -174,7 +172,6 @@ DOMAIN-SUFFIX,dueapp.com
 DOMAIN-SUFFIX,dw.com
 DOMAIN-SUFFIX,easybib.com
 DOMAIN-SUFFIX,economist.com
-DOMAIN-SUFFIX,edgecastcdn.net
 DOMAIN-SUFFIX,edgekey.net
 DOMAIN-SUFFIX,edgesuite.net
 DOMAIN-SUFFIX,engadget.com
@@ -184,7 +181,6 @@ DOMAIN-SUFFIX,evernote.com
 DOMAIN-SUFFIX,extmatrix.com
 DOMAIN-SUFFIX,eyny.com
 DOMAIN-SUFFIX,fabric.io
-DOMAIN-SUFFIX,fastly.net
 DOMAIN-SUFFIX,fastmail.com
 DOMAIN-SUFFIX,fc2.com
 DOMAIN-SUFFIX,feedburner.com
@@ -631,7 +627,6 @@ DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,abc.xyz
-DOMAIN-SUFFIX,akamai.net
 DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-SUFFIX,bandwagonhost.com
@@ -1770,8 +1765,6 @@ DOMAIN-SUFFIX,ft.com
 DOMAIN-SUFFIX,squareup.com
 DOMAIN-SUFFIX,shopify.com
 DOMAIN-SUFFIX,ebay.com
-DOMAIN-SUFFIX,cloudflare.net
-DOMAIN-SUFFIX,cdn.cloudflare.net
 DOMAIN-SUFFIX,cdn.jsdelivr.net
 DOMAIN-SUFFIX,staticxx.facebook.com
 DOMAIN-SUFFIX,fonts.googleapis.com
