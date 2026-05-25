@@ -725,6 +725,20 @@ IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
 IP-CIDR,216.239.35.0/24,no-resolve
 
+# > Google AI
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN,ai.google.dev
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,waa-pa.clients6.google.com
+DOMAIN,gemini.googleapis.com
+
 # > Kakao Talk
 IP-CIDR,1.201.0.0/24,no-resolve
 IP-CIDR,103.246.56.0/22,no-resolve
