@@ -1,9 +1,41 @@
+# > Apple API
+DOMAIN-KEYWORD,apple.com.akadns.net
+DOMAIN-KEYWORD,icloud.com.akadns.net
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple.co
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mzstatic.com
+IP-CIDR,17.0.0.0/8,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve
+IP-CIDR,65.199.22.0/23,no-resolve
+IP-CIDR,139.178.128.0/18,no-resolve
+IP-CIDR,144.178.0.0/19,no-resolve
+IP-CIDR,144.178.36.0/22,no-resolve
+IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,205.180.175.0/24,no-resolve
+
+# > Apple News
+DOMAIN-SUFFIX,apple.comscoreresearch.com
+DOMAIN-SUFFIX,apple.news
+
+# > Apple Maps
+PROCESS-NAME,com.apple.geod
+
 # > Microsoft
 DOMAIN-SUFFIX,here.com
 DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,heremaps.cn
 DOMAIN-SUFFIX,ovi.com.cn
-
 DOMAIN-SUFFIX,azure
 DOMAIN-SUFFIX,azure-apim.net
 DOMAIN-SUFFIX,azure-dns.com
@@ -58,7 +90,6 @@ DOMAIN-SUFFIX,windowsazure.cn
 DOMAIN-SUFFIX,windowsazure.com
 DOMAIN-SUFFIX,azure.microsoft.com
 DOMAIN-SUFFIX,azuremarketplace.microsoft.com
-
 DOMAIN-SUFFIX,bbing.com
 DOMAIN-SUFFIX,bibg.com
 DOMAIN-SUFFIX,biing.com
@@ -118,7 +149,6 @@ DOMAIN-SUFFIX,emoi-cncdn.bing.com
 DOMAIN-SUFFIX,cn.bing.com
 DOMAIN-SUFFIX,cn.bing.net
 DOMAIN-SUFFIX,ditu.live.com
-
 DOMAIN-SUFFIX,a-msedge.net
 DOMAIN-SUFFIX,c-msedge.net
 DOMAIN-SUFFIX,e-msedge.net
@@ -128,10 +158,8 @@ DOMAIN-SUFFIX,microsoftedge.com
 DOMAIN-SUFFIX,microsoftedgeinsider.com
 DOMAIN-SUFFIX,msedge.net
 DOMAIN-SUFFIX,s-msedge.net
-
 DOMAIN-SUFFIX,femalefounderscomp.com
 DOMAIN-SUFFIX,m12.vc
-
 DOMAIN-SUFFIX,adaptivecards.io
 DOMAIN-SUFFIX,api-extractor.com
 DOMAIN-SUFFIX,apisof.net
@@ -183,7 +211,6 @@ DOMAIN-SUFFIX,dtlgalleryint.cloudapp.net
 DOMAIN-SUFFIX,poshtestgallery.cloudapp.net
 DOMAIN-SUFFIX,psg-int-centralus.cloudapp.net
 DOMAIN-SUFFIX,psg-int-eastus.cloudapp.net
-
 DOMAIN-SUFFIX,microsoft-online.cn
 DOMAIN-SUFFIX,microsoft-online.com.cn
 DOMAIN-SUFFIX,microsoftnews.cc
@@ -210,7 +237,6 @@ DOMAIN-SUFFIX,msnewskids.net
 DOMAIN-SUFFIX,msnewskids.org
 DOMAIN-SUFFIX,msnkids.com
 DOMAIN-SUFFIX,winmp.cn
-
 DOMAIN-SUFFIX,o365cn.com
 DOMAIN-SUFFIX,o365files.cn
 DOMAIN-SUFFIX,o365weve-dev.com
@@ -221,7 +247,6 @@ DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,officedev.cn
-
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,1drv.ms
 DOMAIN-SUFFIX,livefilestore.com
@@ -233,18 +258,15 @@ DOMAIN-SUFFIX,onedrive.live.com
 DOMAIN-SUFFIX,onedrive.net
 DOMAIN-SUFFIX,onedrive.org
 DOMAIN-SUFFIX,storage.live.com
-
 DOMAIN-SUFFIX,groupme.com
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,skype.net
 DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,skypeassets.net
 DOMAIN-SUFFIX,skypeforbusiness.com
-
 DOMAIN-SUFFIX,sway-cdn.com
 DOMAIN-SUFFIX,sway-extensions.com
 DOMAIN-SUFFIX,sway.com
-
 DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,visualstudio.co
 DOMAIN-SUFFIX,visualstudio.co.uk
@@ -255,13 +277,11 @@ DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,vscode-unpkg.net
 DOMAIN-SUFFIX,vscode-webview.net
 DOMAIN-SUFFIX,vscode.dev
-
 DOMAIN-SUFFIX,live.cn
 DOMAIN-SUFFIX,live.com.akadns.net
 DOMAIN-SUFFIX,sclive.net
 DOMAIN-SUFFIX,windowslive.cn
 DOMAIN-SUFFIX,wlxrs.com
-
 DOMAIN-SUFFIX,aicscience.com
 DOMAIN-SUFFIX,mmais.com.cn
 DOMAIN-SUFFIX,msminico.cn
@@ -271,11 +291,9 @@ DOMAIN-SUFFIX,msxiaoice.com
 DOMAIN-SUFFIX,msxiaona.cn
 DOMAIN-SUFFIX,officeplus.cn
 DOMAIN-SUFFIX,renlifang.com
-
 DOMAIN-SUFFIX,cortana.ai
 DOMAIN-SUFFIX,cortanaanalytics.com
 DOMAIN-SUFFIX,cortanaskills.com
-
 DOMAIN-SUFFIX,forzamotorsport.net
 DOMAIN-SUFFIX,forzaracingchampionship.com
 DOMAIN-SUFFIX,forzarc.com
@@ -304,17 +322,14 @@ DOMAIN-SUFFIX,xboxplayanywhere.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
-
 DOMAIN-SUFFIX,callersbane.com
 DOMAIN-SUFFIX,minecraft.net
 DOMAIN-SUFFIX,minecraftshop.com
 DOMAIN-SUFFIX,mojang.com
-
 DOMAIN-SUFFIX,beth.games
 DOMAIN-SUFFIX,bethesda.net
 DOMAIN-SUFFIX,bethesdagamestudios.com
 DOMAIN-SUFFIX,bethsoft.com
-
 DOMAIN-SUFFIX,Applicationinsights.io
 DOMAIN-SUFFIX,Applicationinsights.net
 DOMAIN-SUFFIX,aadrm.com
