@@ -1,69 +1,64 @@
-# Provider Review Queue
+# Provider 审核清单
 
-This file tracks source rules that were not automatically merged into the active
-provider lists.
+这个文件记录没有自动合并进当前主规则集的内容，以及原因。
 
-## Not Auto-Merged
+## 未自动合并
 
 ### Auto
 
-`Auto/` appears to be an older split profile, not a current provider source. The
-following files need manual review before any future merge:
+`Auto/` 看起来是旧版 Surge 配置拆出来的片段，不是当前主 Provider 来源。
+下面这些文件需要之后人工判断：
 
-- `Auto/DIRECT.conf`: old domestic/direct rules. Some overlap with `China.list`,
-  but it also contains local-network, SMTP, BT, and behavior rules.
-- `Auto/PROXY.conf`: old proxy rules. Some entries overlap with current
-  `Proxy.list`, but it may reintroduce services that were intentionally removed
-  or moved.
-- `Auto/REJECT.conf`: not merged. Keep reject behavior isolated and do not move
-  these rules into routing provider lists without explicit review.
-- `Auto/Header Rewrite.conf`, `Auto/URL Rewrite.conf`, `Auto/Script.conf`,
-  `Auto/Hostname.conf`: rewrite, script, and MITM support files, not provider
-  routing rules.
-- `Auto/HOST.conf`: empty.
+- `Auto/DIRECT.conf`：旧的直连/国内规则，里面混着国内服务、局域网、SMTP、
+  BT 下载和行为规则，不能整文件并入 `China.list`。
+- `Auto/PROXY.conf`：旧的代理大杂烩，可能把已经删掉或重新分类的服务又加回来。
+- `Auto/REJECT.conf`：广告拦截规则，不动。Reject 行为必须保持独立。
+- `Auto/Header Rewrite.conf`、`Auto/URL Rewrite.conf`、`Auto/Script.conf`、
+  `Auto/Hostname.conf`：重写、脚本、MITM hostname，不是普通路由 Provider。
+- `Auto/HOST.conf`：空文件。
 
-Only clear Apple direct rules from `Auto/Apple.conf` were merged into
-`Apple Microsoft.list`.
+`Auto/Apple.conf` 里明确属于 Apple 直连的内容已经合并进
+`Apple Microsoft.list`。
 
 ### 2025/Home_IP_Only.list
 
-This file mixes AI, developer tools, cloud services, and app-specific rules. It
-was not merged wholesale.
+这个文件的用途已经确认：和 `AI.list`、`Disney Hulu Netflix.list` 一样，未来
+都准备走家里服务器路线。
 
-Already covered by the active `AI.list`:
+已处理：
 
-- `openai.com`, `chatgpt.com`, `oaiusercontent.com`
-- `anthropic.com`, `claude.ai`, `claudeusercontent.com`
-- `api.anthropic.com` is covered by `anthropic.com`
-- `cdn.oaistatic.com` is covered by `oaistatic.com`
+- AI / 开发工具相关内容已合并进 `AI.list`。
+- 美区流媒体相关内容已合并进 `Disney Hulu Netflix.list`。
+- 已存在的规则没有重复追加。
 
-Needs manual routing decision:
+仍然需要人工确认的冲突项：
 
-- Augment: `augment.com`, `augmentcode.com`
-- Cloudflare AI Gateway: `gateway.ai.cloudflare.com`
-- GitHub Copilot: `githubcopilot.com`, `api.github.com`
-- Microsoft Copilot and Bing AI domains
-- Cursor, Codeium, Windsurf
-- Dify, xAI/Grok, Groq, Jasper, Clipdrop
-- Meta AI and Llama domains
-- Perplexity domains
-- Poe, You.com, Phind, Hugging Face, Replicate
-- Stability AI, Midjourney, Runway, Suno, ElevenLabs
-- Replit, Lovable, v0, Bolt, Supabase, Railway, Vercel, Netlify
+- Google AI / Gemini 相关域名：按之前约定，Google 服务保持在 `Proxy.list`，
+  不并入 `AI.list`。
+- YouTube TV 相关域名：属于 Google / YouTube 服务，保持在 `Proxy.list`，
+  不并入 `Disney Hulu Netflix.list`。
+- Apple TV+ 相关域名：属于 Apple 服务，保持在 `Apple Microsoft.list`，
+  不并入 `Disney Hulu Netflix.list`。
+- Microsoft Copilot 周边的广义 Microsoft 域名，例如 `bing.com`、`msn.com`、
+  `edge.microsoft.com`、`microsoftonline.com`、`assets.msn.com`：这些可能和
+  `Apple Microsoft.list` 的直连目标冲突，所以没有自动并入 `AI.list`。
+- `api.github.com`：GitHub API 很宽，只有 GitHub Copilot 明确并入了
+  `AI.list`，没有把整个 GitHub API 改成家里路线。
+- Firebase 相关域名：属于 Google 生态，暂时不并入 `AI.list`。
 
 ### 2025/Global.list
 
-This file is a broad global proxy list. It overlaps heavily with current
-`Proxy.list`, `Apple Microsoft.list`, and `China.list`. It was not merged as a
-whole because it would blur the route ownership model.
+这是一个很大的全球代理大杂烩，和当前 `Proxy.list`、`Apple Microsoft.list`、
+`China.list` 都有重叠。没有整文件合并，因为会破坏现在按用途和线路拆分的
+结构。
 
 ### 2025/block_udp443.list
 
-Contains:
+内容是：
 
 ```text
 AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
 ```
 
-This is a behavior rule for blocking QUIC/UDP 443, not a provider domain list.
-Keep it for main-config or module review.
+这是阻止 QUIC / UDP 443 的行为规则，不是普通域名 Provider。之后整理主配置
+或模块时再决定是否启用。
