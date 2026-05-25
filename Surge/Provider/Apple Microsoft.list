@@ -626,3 +626,9 @@ DOMAIN-SUFFIX,ls.apple.com
 
 # > Microsoft Special
 USER-AGENT,Microsoft%20Remote%20Desktop*
+
+# > Global Direct Supplemental
+DOMAIN-SUFFIX,msftncsi.com
+DOMAIN-SUFFIX,appleid.apple.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,testflight.apple.com
