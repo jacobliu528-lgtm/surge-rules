@@ -60,5 +60,5 @@
 AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
 ```
 
-这是阻止 QUIC / UDP 443 的行为规则，不是普通域名 Provider。之后整理主配置
-或模块时再决定是否启用。
+这是阻止 QUIC / UDP 443 的行为规则，不是普通域名 Provider。已经迁移到
+`Surge/Provider/Block_QUIC.list`，供主配置继续以 `RULE-SET` 形式引用。
